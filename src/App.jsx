@@ -5,12 +5,14 @@ import './App.css';
 
 
 
-function App() {
+function App({text, subText}) {
+  const frontEndskills = ['javascript','typescript','angualr.js','react'];
+  const backEndskills = ['php','C#','Node.js','Java','Rust','Go','python']
 
   return (
     <>
-      <Header></Header>
-      <Content></Content>
+      <Header text='React and Vite are amazing... ' subText="React apps are made up of components"/>
+      <Content skills ={backEndskills} />
       <Footer></Footer>
     </>
   )
